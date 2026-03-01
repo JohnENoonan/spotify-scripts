@@ -1,4 +1,4 @@
-# Shows a user's saved tracks (need to be authenticated via oauth)
+# Shows a user's unique liked artists that only have one song by them that you liked
 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -45,8 +45,7 @@ def get_one_hit(outfile=None):
 	"""
 	start_time = time.perf_counter()
 	sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
-	# create date bounds
-
+	
 	# iterate songs and filter
 	results = sp.current_user_saved_tracks()
 	header = ["artist", "song", "album", "release-date", "date-liked"]
