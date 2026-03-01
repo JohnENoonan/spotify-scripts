@@ -20,4 +20,4 @@ These scripts were designed primarily for archiving personal liked songs and for
 	```
 
 ## Running 
-Each script uses Argparser, simply run the pytjhon scripts from the CLI with the appropriate arguments
+Each script uses Argparser, simply run the python scripts from the CLI with the appropriate arguments. The `--help` argument will ist all possible arguments. 
