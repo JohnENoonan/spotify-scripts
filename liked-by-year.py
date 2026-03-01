@@ -67,7 +67,7 @@ def get_songs(years, write_out=False):
 		print(output, end='\r', flush=True)
 
 	# sort tracks by artist
-	print(f"Reviewd a total of {seen} songs")
+	print(f"Reviewed a total of {seen} songs")
 	for year in years:
 		print(f"Got {len(liked[year])} liked songs in {year}...")
 		liked[year] = sorted(liked[year], key=lambda x: x[0][0].lower())
